@@ -1,1 +1,3 @@
 /paddle_env
+/out/*
+!out/.gitkeep

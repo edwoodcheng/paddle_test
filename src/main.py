@@ -13,7 +13,7 @@ print(f"cwd: {os.getcwd()}")
 
 # Paddleocr目前支持的多语言语种可以通过修改lang参数进行切换
 # 例如`ch`, `en`, `fr`, `german`, `korean`, `japan`
-ocr = PaddleOCR(use_angle_cls=True, lang="ch")  # need to run only once to download and load model into memory
+ocr = PaddleOCR(use_angle_cls=True, lang='ch')  # need to run only once to download and load model into memory
 FONT_PATH = "assets/chinese_font.ttf"
 FONT_SIZE = 16
 OCR_HIGH_CONF = 0.8
@@ -60,7 +60,7 @@ def visualizeOcrResults(img: np.ndarray, result: List) -> np.ndarray:
     ocr_img = cv2.cvtColor(ocr_img, cv2.COLOR_RGB2BGR)
     return ocr_img
 
-for i in range(1, 18):
+for i in range(1, 4):
     print(f"----------------------------------page {i}---------------------------------------")
     img_path = f"img/regal-{i}.png"
     img = cv2.imread(img_path)
@@ -81,5 +81,4 @@ for i in range(1, 18):
     print("outputting image...")
     ocr_img = visualizeOcrResults(img, result)
     cv2.imwrite(f"out/ocr_page_{i}.png", ocr_img)
-
 
