@@ -119,6 +119,7 @@ def test_diff_size_img(img_path: str, mult_start: float, mult_end, steps = 5):
         cv2.imwrite(f"out/ocr_multiplier_{multiplier}.png", ocr_img)
         print("finished outputting image!")
 
+# call the test function here to test
 def main():
     test_diff_size_img("img/regal-3.png", 1, 0.5)
 
