@@ -12,4 +12,4 @@ If you have no available GPU on your machine, please run the following command t
 
 **Install PaddleOCR Whl Package**
 
-pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+- pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
