@@ -1,3 +1,5 @@
+# This repo is runing on CPU, **NOT GPU**. Please install the corresponding library for GPU
+
 **Install PaddleOCR**
 If you have CUDA 9 or CUDA 10 installed on your machine, please run the following command to install
 
