@@ -1,6 +1,6 @@
 import os
 from PIL import Image, ImageDraw, ImageFont
-from paddleocr import PaddleOCR, draw_ocr
+from paddleocr import PaddleOCR
 import cv2
 import numpy as np
 from typing import List
@@ -121,7 +121,7 @@ def test_diff_size_img(img_path: str, mult_start: float, mult_end, steps = 5):
 
 # call the test function here to test
 def main():
-    test_diff_size_img("img/regal-3.png", 1, 0.5)
+    test_diff_size_img("img/regal-4.png", 1, 0.5)
 
 if __name__ == "__main__":
     main()
